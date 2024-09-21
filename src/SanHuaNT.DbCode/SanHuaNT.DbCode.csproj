@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+
+		<RootNamespace>SanHuaNT.DbCode</RootNamespace>
+
+		<Platforms>x86;x64;arm64</Platforms>
+
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<AssemblyTitle>三花装备--$(RootNamespace)程序</AssemblyTitle>
+		<Description>数据中间件，支持Postgresql、MongoDB，重点在缓存、性能、分表、自动建表。</Description>
+		<Company>TSI XMOONLIGHT开发团队</Company>
+		<Copyright>©2002-2024 TSI XMOONLIGHT</Copyright>
+		<VersionPrefix>10.8</VersionPrefix>
+		<VersionSuffix>$([System.DateTime]::Now.ToString(`yyyy.MMdd`))</VersionSuffix>
+		<Version>$(VersionPrefix).$(VersionSuffix)</Version>
+		<FileVersion>$(Version)</FileVersion>
+		<AssemblyVersion>$(VersionPrefix).$([System.DateTime]::Now.ToString(`yyyy.MMdd`))</AssemblyVersion>
+
+		<OutputPath>..\..\Builds\$(RootNamespace)</OutputPath>
+
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SanHuaNT.Core\SanHuaNT.Core.csproj" />
+	</ItemGroup>
+</Project>

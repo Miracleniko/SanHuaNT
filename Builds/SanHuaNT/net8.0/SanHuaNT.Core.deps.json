@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SanHuaNT.Core/10.8.2024.0921": {
+        "runtime": {
+          "SanHuaNT.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SanHuaNT.Core/10.8.2024.0921": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

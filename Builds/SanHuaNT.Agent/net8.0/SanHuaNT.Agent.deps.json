@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SanHuaNT.Agent/10.8.2024.0921": {
+        "dependencies": {
+          "SanHuaNT.Core": "10.8.2024.921"
+        },
+        "runtime": {
+          "SanHuaNT.Agent.dll": {}
+        }
+      },
+      "SanHuaNT.Core/10.8.2024.921": {
+        "runtime": {
+          "SanHuaNT.Core.dll": {
+            "assemblyVersion": "10.8.2024.921",
+            "fileVersion": "10.8.2024.0921"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SanHuaNT.Agent/10.8.2024.0921": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SanHuaNT.Core/10.8.2024.921": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
