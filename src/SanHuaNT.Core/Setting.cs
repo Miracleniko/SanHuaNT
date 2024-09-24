@@ -57,7 +57,7 @@ public class Setting : Config<Setting>
 
     /// <summary>插件目录</summary>
     [Description("插件目录")]
-    public String PluginPath { get; set; } = "Plugins";
+    public String PluginPath { get; set; } = "";
 
     /// <summary>辅助解析程序集。程序集加载过程中，被依赖程序集未能解析时，是否协助解析，默认false</summary>
     [Description("辅助解析程序集。程序集加载过程中，被依赖程序集未能解析时，是否协助解析，默认false")]

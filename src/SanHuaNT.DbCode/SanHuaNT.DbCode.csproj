@@ -24,6 +24,10 @@
 
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+	  <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.8" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\SanHuaNT.Core\SanHuaNT.Core.csproj" />
