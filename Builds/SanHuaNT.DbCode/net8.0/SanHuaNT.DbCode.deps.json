@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "SanHuaNT.DbCode/10.8.2024.0923": {
+      "SanHuaNT.DbCode/10.8.2024.0924": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.2",
           "Microsoft.Data.Sqlite": "8.0.8",
@@ -533,14 +533,14 @@
         "runtime": {
           "SanHuaNT.Core.dll": {
             "assemblyVersion": "10.8.2024.921",
-            "fileVersion": "10.8.2024.0923"
+            "fileVersion": "10.8.2024.0924"
           }
         }
       }
     }
   },
   "libraries": {
-    "SanHuaNT.DbCode/10.8.2024.0923": {
+    "SanHuaNT.DbCode/10.8.2024.0924": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

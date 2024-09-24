@@ -69,8 +69,10 @@ public class Install : BaseCommandHandler
     public virtual String GetExeName()
     {
         var p = System.Diagnostics.Process.GetCurrentProcess();
-        var filename = p.MainModule.FileName;
-        //filename = Path.GetFileName(filename);
+        var filename = p.MainModule?.FileName; // 修复问题
+
+        if (filename == null) throw new InvalidOperationException("无法获取当前进程的文件名。"); // 添加异常处理
+
         filename = filename.Replace(".vshost.", ".");
 
         return filename;

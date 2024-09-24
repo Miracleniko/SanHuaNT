@@ -30,7 +30,7 @@ namespace SanHuaNT.DbCode.DataAccessLayer
     {
         #region 属性
         /// <summary>文件</summary>
-        public String FileName => (Database as FileDbBase)?.DatabaseName;
+        public String? FileName => (Database as FileDbBase)?.DatabaseName;
         #endregion
 
         #region 构造函数
@@ -67,7 +67,8 @@ namespace SanHuaNT.DbCode.DataAccessLayer
 
         protected virtual void CreateDatabase()
         {
-            if (!File.Exists(FileName)) Database.CreateMetaData().SetSchema(DDLSchema.CreateDatabase);
+            if (!String.IsNullOrEmpty(FileName) && !File.Exists(FileName))
+                Database.CreateMetaData().SetSchema(DDLSchema.CreateDatabase);
         }
         #endregion
 
@@ -88,13 +89,13 @@ namespace SanHuaNT.DbCode.DataAccessLayer
     {
         #region 属性
         /// <summary>文件</summary>
-        public String FileName => (Database as FileDbBase).DatabaseName;
+        public String? FileName => (Database as FileDbBase)?.DatabaseName;
         #endregion
 
         #region 数据定义
         /// <summary>设置数据定义模式</summary>
         /// <param name="schema"></param>
-        /// <param name="values"></param>
+        /// <param="values"></param>
         /// <returns></returns>
         public override Object? SetSchema(DDLSchema schema, Object?[] values)
         {
